@@ -46,9 +46,21 @@
     <ClInclude Include="..\..\Source\SnakeGame\PlayerPawnBase.h">
       <Filter>Source\SnakeGame</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\SnakeGame\SnakeBase.h">
+      <Filter>Source\SnakeGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SnakeGame\SnakeElementBase.h">
+      <Filter>Source\SnakeGame</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\SnakeGame\PlayerPawnBase.cpp">
+      <Filter>Source\SnakeGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SnakeGame\SnakeBase.cpp">
+      <Filter>Source\SnakeGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SnakeGame\SnakeElementBase.cpp">
       <Filter>Source\SnakeGame</Filter>
     </ClCompile>
   </ItemGroup>

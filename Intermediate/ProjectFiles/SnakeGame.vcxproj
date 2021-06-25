@@ -372,8 +372,12 @@
     <None Include="..\..\Config\DefaultGame.ini" />
     <None Include="..\..\Source\SnakeGame\SnakeGame.Build.cs" />
     <ClCompile Include="..\..\Source\SnakeGame\PlayerPawnBase.cpp" />
+    <ClCompile Include="..\..\Source\SnakeGame\SnakeBase.cpp" />
+    <ClCompile Include="..\..\Source\SnakeGame\SnakeElementBase.cpp" />
     <ClCompile Include="..\..\Source\SnakeGame\SnakeGame.cpp" />
     <ClInclude Include="..\..\Source\SnakeGame\PlayerPawnBase.h" />
+    <ClInclude Include="..\..\Source\SnakeGame\SnakeBase.h" />
+    <ClInclude Include="..\..\Source\SnakeGame\SnakeElementBase.h" />
     <ClInclude Include="..\..\Source\SnakeGame\SnakeGame.h" />
     <ClCompile Include="..\..\Source\SnakeGame\SnakeGameGameModeBase.cpp" />
     <ClInclude Include="..\..\Source\SnakeGame\SnakeGameGameModeBase.h" />
