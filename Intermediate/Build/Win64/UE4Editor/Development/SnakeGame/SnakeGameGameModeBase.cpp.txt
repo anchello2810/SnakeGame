@@ -1,0 +1,7 @@
+C:\Users\aramt\Documents\git\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\Definitions.SnakeGame.h
+C:\Users\aramt\Documents\git\SnakeGame\Source\SnakeGame\SnakeGameGameModeBase.h
+D:\Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+D:\Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+D:\Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+D:\Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\aramt\Documents\git\SnakeGame\Intermediate\Build\Win64\UE4Editor\Inc\SnakeGame\SnakeGameGameModeBase.generated.h

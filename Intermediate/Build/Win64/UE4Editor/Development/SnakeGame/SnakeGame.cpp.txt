@@ -1,0 +1,2 @@
+C:\Users\aramt\Documents\git\SnakeGame\Intermediate\Build\Win64\UE4Editor\Development\SnakeGame\Definitions.SnakeGame.h
+C:\Users\aramt\Documents\git\SnakeGame\Source\SnakeGame\SnakeGame.h
