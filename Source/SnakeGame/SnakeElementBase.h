@@ -17,7 +17,7 @@ public:
 	// Sets default values for this actor's properties
 	ASnakeElementBase();
 
-	UPROPERTY(VisibleAnyWhere BlueprintReadOnly)
+	UPROPERTY(VisibleAnyWhere, BlueprintReadOnly)
 		UStaticMeshComponent* MeshComponent; 
 
 protected:

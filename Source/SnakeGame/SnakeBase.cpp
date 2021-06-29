@@ -16,7 +16,7 @@ ASnakeBase::ASnakeBase()
 void ASnakeBase::BeginPlay()
 {
 	Super::BeginPlay();
-	GetWorld()->SpawnActor<ASnakeElementBase>(SnakeElementClass ? GetActorTransform());
+	GetWorld()->SpawnActor<ASnakeElementBase>(SnakeElementClass , GetActorTransform());
 	
 }
 

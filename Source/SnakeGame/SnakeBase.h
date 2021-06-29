@@ -18,7 +18,7 @@ public:
 	ASnakeBase();
 
 	UPROPERTY(EditDefaultsOnly)
-		TSubClassOf<ASnakeElementBase> SnakeElementClass; 
+	TSubClassOf <ASnakeElementBase> SnakeElementClass;
 
 protected:
 	// Called when the game starts or when spawned
