@@ -13,8 +13,48 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define SNAKEGAME_PlayerPawnBase_generated_h
 
-#define SnakeGame_Source_SnakeGame_PlayerPawnBase_h_14_RPC_WRAPPERS
-#define SnakeGame_Source_SnakeGame_PlayerPawnBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define SnakeGame_Source_SnakeGame_PlayerPawnBase_h_14_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execHandlePlayerHorizontalImput) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->HandlePlayerHorizontalImput(Z_Param_value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHandlePlayerVerticalImput) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->HandlePlayerVerticalImput(Z_Param_value); \
+		P_NATIVE_END; \
+	}
+
+
+#define SnakeGame_Source_SnakeGame_PlayerPawnBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execHandlePlayerHorizontalImput) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->HandlePlayerHorizontalImput(Z_Param_value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHandlePlayerVerticalImput) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->HandlePlayerVerticalImput(Z_Param_value); \
+		P_NATIVE_END; \
+	}
+
+
 #define SnakeGame_Source_SnakeGame_PlayerPawnBase_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerPawnBase(); \

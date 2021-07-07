@@ -17,12 +17,84 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawnBase() {}
 	SNAKEGAME_API UClass* Z_Construct_UClass_APlayerPawnBase();
 	ENGINE_API UClass* Z_Construct_UClass_APawn();
 	UPackage* Z_Construct_UPackage__Script_SnakeGame();
+	SNAKEGAME_API UFunction* Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput();
+	SNAKEGAME_API UFunction* Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	SNAKEGAME_API UClass* Z_Construct_UClass_ASnakeBase_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 // End Cross Module References
 	void APlayerPawnBase::StaticRegisterNativesAPlayerPawnBase()
 	{
+		UClass* Class = APlayerPawnBase::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "HandlePlayerHorizontalImput", &APlayerPawnBase::execHandlePlayerHorizontalImput },
+			{ "HandlePlayerVerticalImput", &APlayerPawnBase::execHandlePlayerVerticalImput },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput_Statics
+	{
+		struct PlayerPawnBase_eventHandlePlayerHorizontalImput_Parms
+		{
+			float value;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_value;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlayerPawnBase_eventHandlePlayerHorizontalImput_Parms, value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput_Statics::NewProp_value,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerPawnBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayerPawnBase, nullptr, "HandlePlayerHorizontalImput", sizeof(PlayerPawnBase_eventHandlePlayerHorizontalImput_Parms), Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput_Statics
+	{
+		struct PlayerPawnBase_eventHandlePlayerVerticalImput_Parms
+		{
+			float value;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_value;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlayerPawnBase_eventHandlePlayerVerticalImput_Parms, value), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput_Statics::NewProp_value,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerPawnBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayerPawnBase, nullptr, "HandlePlayerVerticalImput", sizeof(PlayerPawnBase_eventHandlePlayerVerticalImput_Parms), Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_APlayerPawnBase_NoRegister()
 	{
@@ -31,6 +103,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawnBase() {}
 	struct Z_Construct_UClass_APlayerPawnBase_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -53,6 +126,10 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawnBase() {}
 	UObject* (*const Z_Construct_UClass_APlayerPawnBase_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_APawn,
 		(UObject* (*)())Z_Construct_UPackage__Script_SnakeGame,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_APlayerPawnBase_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_APlayerPawnBase_HandlePlayerHorizontalImput, "HandlePlayerHorizontalImput" }, // 1136822714
+		{ &Z_Construct_UFunction_APlayerPawnBase_HandlePlayerVerticalImput, "HandlePlayerVerticalImput" }, // 84061747
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawnBase_Statics::Class_MetaDataParams[] = {
@@ -96,11 +173,11 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawnBase() {}
 		nullptr,
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_APlayerPawnBase_Statics::PropPointers,
 		nullptr,
 		ARRAY_COUNT(DependentSingletons),
-		0,
+		ARRAY_COUNT(FuncInfo),
 		ARRAY_COUNT(Z_Construct_UClass_APlayerPawnBase_Statics::PropPointers),
 		0,
 		0x009000A0u,
@@ -115,7 +192,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawnBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayerPawnBase, 609770956);
+	IMPLEMENT_CLASS(APlayerPawnBase, 3024830798);
 	template<> SNAKEGAME_API UClass* StaticClass<APlayerPawnBase>()
 	{
 		return APlayerPawnBase::StaticClass();

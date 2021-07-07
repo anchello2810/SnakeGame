@@ -40,4 +40,9 @@ public:
 
 	void CreateSnakeActor();
 
+	UFUNCTION()
+		void HandlePlayerVerticalImput(float value);
+	UFUNCTION()
+		void HandlePlayerHorizontalImput(float value);
+
 };
