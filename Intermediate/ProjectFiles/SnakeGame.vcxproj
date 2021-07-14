@@ -371,10 +371,14 @@
     <None Include="..\..\Config\DefaultEngine.ini" />
     <None Include="..\..\Config\DefaultGame.ini" />
     <None Include="..\..\Source\SnakeGame\SnakeGame.Build.cs" />
+    <ClCompile Include="..\..\Source\SnakeGame\Food.cpp" />
+    <ClCompile Include="..\..\Source\SnakeGame\Interactable.cpp" />
     <ClCompile Include="..\..\Source\SnakeGame\PlayerPawnBase.cpp" />
     <ClCompile Include="..\..\Source\SnakeGame\SnakeBase.cpp" />
     <ClCompile Include="..\..\Source\SnakeGame\SnakeElementBase.cpp" />
     <ClCompile Include="..\..\Source\SnakeGame\SnakeGame.cpp" />
+    <ClInclude Include="..\..\Source\SnakeGame\Food.h" />
+    <ClInclude Include="..\..\Source\SnakeGame\Interactable.h" />
     <ClInclude Include="..\..\Source\SnakeGame\PlayerPawnBase.h" />
     <ClInclude Include="..\..\Source\SnakeGame\SnakeBase.h" />
     <ClInclude Include="..\..\Source\SnakeGame\SnakeElementBase.h" />
