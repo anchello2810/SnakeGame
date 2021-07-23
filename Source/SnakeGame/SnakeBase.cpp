@@ -42,7 +42,7 @@ void ASnakeBase::AddSnakeElement(int ElementsNum)
 		NewSnakeElem->SnakeOwner = this; 
 		int32 ElemIndex = SnakeElements.Add(NewSnakeElem);
 		if (ElemIndex == 0)
-		{
+		{			
 			NewSnakeElem->SetFirstElementType();
 			
 		}
